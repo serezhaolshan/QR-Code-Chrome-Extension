@@ -1,0 +1,25 @@
+{
+    "name": "Website QR Generator",
+    "description" : "Generates QR code of website's adress ",
+    "version": "1.0",
+    "icons": {
+      "128": "hello_extensions.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [ "*://*/*" ],
+        "js": [ "popup.js" ]
+      }
+    ],
+    "browser_action": {
+      "default_title": "Website QR Generator",
+      "default_icon": "hello_extensions.png",
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "tabs",
+      "activeTab"
+    ],
+      "manifest_version": 2
+}
+
